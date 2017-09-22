@@ -1,0 +1,10 @@
+os:
+    - linux
+    - osx
+language: go
+go:
+    - 1.8.x
+script: go test -short -race ./...
+notifications:
+    email:
+    - dev@meatpistol.io
